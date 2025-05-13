@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .logo-container {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .logo-container:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .title-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .logo-img {
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 title-text">
+                Herramientas IA
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Descubre las plataformas más innovadoras de inteligencia artificial que están transformando industrias.
+            </p>
+        </header>
+        
+        <!-- Plataformas Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            <!-- Hugging Face -->
+            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
+                 onclick="window.open('https://huggingface.co', '_blank')">
+                <img src="https://cdn.prod.website-files.com/657639ebfb91510f45654149/67cb2328a0f5afcb01adc404_66bbf2250478cce84c3c3760_66bbf21b7f0ee244a1589b75_c3635b59-a3d2-444a-b636-a9d0061dcdde.png" 
+                     alt="Hugging Face Logo" class="logo-img">
+                <h3 class="text-lg font-semibold text-gray-800">Hugging Face</h3>
+                <p class="text-sm text-gray-500 mt-1 text-center">Modelos de IA de código abierto</p>
+            </div>
+            
+            <!-- Udio -->
+            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
+                 onclick="window.open('https://udio.com', '_blank')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjmrMDJG4hhOL74EpXdZVUlTOIxNndYeprrQ&s" 
+                     alt="Udio Logo" class="logo-img">
+                <h3 class="text-lg font-semibold text-gray-800">Udio.com</h3>
+                <p class="text-sm text-gray-500 mt-1 text-center">Música generada por IA</p>
+            </div>
+            
+            <!-- Suno -->
+            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
+                 onclick="window.open('https://suno.com', '_blank')">
+                <img src="https://digino.org/wp-content/uploads/2023/12/suno-ai-logo.png" 
+                     alt="Suno Logo" class="logo-img">
+                <h3 class="text-lg font-semibold text-gray-800">Suno.com</h3>
+                <p class="text-sm text-gray-500 mt-1 text-center">Herramientas solares con IA</p>
+            </div>
+            
+            <!-- Lexica -->
+            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
+                 onclick="window.open('https://lexica.art', '_blank')">
+                <img src="https://lexica.art/lexica-meta.png" 
+                     alt="Lexica Logo" class="logo-img">
+                <h3 class="text-lg font-semibold text-gray-800">Lexica.art</h3>
+                <p class="text-sm text-gray-500 mt-1 text-center">Arte generado por IA</p>
+            </div>
+            
+            <!-- Heygen -->
+            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
+                 onclick="window.open('https://heygen.com', '_blank')">
+                <img src="https://forosdeia.com/attachments/heygen-jpg.1988/" 
+                     alt="Heygen Logo" class="logo-img">
+                <h3 class="text-lg font-semibold text-gray-800">Heygen.com</h3>
+                <p class="text-sm text-gray-500 mt-1 text-center">Avatares de video con IA</p>
+            </div>
+            
+            <!-- Weights -->
+            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
+                 onclick="window.open('https://weights.com', '_blank')">
+                <img src="https://play-lh.googleusercontent.com/H8vgLES2SPOi_KfC5UBf7nU8PqYf8Qyj6sbjtE-HghvejGdc_WDpgBAKNNW2jdpqDk85" 
+                     alt="Weights Logo" class="logo-img">
+                <h3 class="text-lg font-semibold text-gray-800">Weights.com</h3>
+                <p class="text-sm text-gray-500 mt-1 text-center">Modelos de IA ponderados</p>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="mt-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 md:p-12 text-white text-center pulse">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Listo para explorar el futuro?</h2>
+            <p class="mb-6 max-w-2xl mx-auto text-blue-100">
+                Estas herramientas de IA están redefiniendo lo que es posible. Haz clic en cualquier plataforma para comenzar tu viaje.
+            </p>
+            <button class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+                Más herramientas IA
+            </button>
+        </div>
+    </div>
+    
+    <footer class="mt-20 text-center text-gray-500 text-sm">
+        <p>© 2023 Herramientas IA. Todos los derechos reservados.</p>
+        <p class="mt-2">Diseñado con ❤️ para amantes de la tecnología</p>
+    </footer>
+
+    <script>
+        // Efecto de hover mejorado para los logos
+        document.querySelectorAll('.logo-container').forEach(container => {
+            container.addEventListener('mouseenter', function() {
+                this.classList.add('shadow-lg');
+            });
+            
+            container.addEventListener('mouseleave', function() {
+                this.classList.remove('shadow-lg');
+            });
+        });
+        
+        // Animación para el botón CTA
+        const ctaButton = document.querySelector('button');
+        if (ctaButton) {
+            ctaButton.addEventListener('mouseenter', function() {
+                this.classList.add('transform', 'scale-105');
+            });
+            
+            ctaButton.addEventListener('mouseleave', function() {
+                this.classList.remove('transform', 'scale-105');
+            });
+        }
+    </script>
+</body>
+</html>
