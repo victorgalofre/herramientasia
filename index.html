@@ -54,6 +54,32 @@
             object-fit: contain;
             margin-bottom: 1rem;
         }
+        
+        .sena-cta {
+            background: linear-gradient(135deg, #0056b8 0%, #003366 100%);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        
+        .sena-cta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sena-logo {
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
     </style>
 </head>
 <body class="py-12 px-4 sm:px-6 lg:px-8">
@@ -114,26 +140,21 @@
                 <h3 class="text-lg font-semibold text-gray-800">Heygen.com</h3>
                 <p class="text-sm text-gray-500 mt-1 text-center">Avatares de video con IA</p>
             </div>
-            
-            <!-- Weights -->
-            <div class="logo-container bg-white rounded-xl p-6 shadow-md flex flex-col items-center justify-center cursor-pointer"
-                 onclick="window.open('https://weights.com', '_blank')">
-                <img src="https://play-lh.googleusercontent.com/H8vgLES2SPOi_KfC5UBf7nU8PqYf8Qyj6sbjtE-HghvejGdc_WDpgBAKNNW2jdpqDk85" 
-                     alt="Weights Logo" class="logo-img">
-                <h3 class="text-lg font-semibold text-gray-800">Weights.com</h3>
-                <p class="text-sm text-gray-500 mt-1 text-center">Modelos de IA ponderados</p>
-            </div>
         </div>
         
-        <!-- CTA Section -->
-        <div class="mt-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 md:p-12 text-white text-center pulse">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Listo para explorar el futuro?</h2>
-            <p class="mb-6 max-w-2xl mx-auto text-blue-100">
-                Estas herramientas de IA están redefiniendo lo que es posible. Haz clic en cualquier plataforma para comenzar tu viaje.
+        <!-- Sección SENA al final -->
+        <div class="sena-cta cursor-pointer" onclick="window.open('https://www.sena.edu.co', '_blank')">
+            <img src="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png" 
+                 alt="Logo SENA" class="sena-logo">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Servicio Nacional de Aprendizaje</h2>
+            <p class="mb-6 max-w-2xl mx-auto text-blue-100 text-center">
+                Formación profesional integral para el desarrollo económico, social y tecnológico del país.
             </p>
-            <button class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
-                Más herramientas IA
-            </button>
+            <div class="flex space-x-4">
+                <span class="px-4 py-2 bg-white text-blue-600 rounded-full text-sm font-medium">Educación</span>
+                <span class="px-4 py-2 bg-white text-blue-600 rounded-full text-sm font-medium">Tecnología</span>
+                <span class="px-4 py-2 bg-white text-blue-600 rounded-full text-sm font-medium">Innovación</span>
+            </div>
         </div>
     </div>
     
@@ -145,6 +166,7 @@
     <script>
         // Efecto de hover mejorado para los logos
         document.querySelectorAll('.logo-container').forEach(container => {
+$0
             container.addEventListener('mouseenter', function() {
                 this.classList.add('shadow-lg');
             });
@@ -154,17 +176,16 @@
             });
         });
         
-        // Animación para el botón CTA
-        const ctaButton = document.querySelector('button');
-        if (ctaButton) {
-            ctaButton.addEventListener('mouseenter', function() {
-                this.classList.add('transform', 'scale-105');
+        // Animación para la sección SENA
+        const senaSection = document.querySelector('.sena-cta');
+        if (senaSection) {
+            senaSection.addEventListener('mouseenter', function() {
+                this.classList.add('transform', 'scale-[1.01]');
             });
             
-            ctaButton.addEventListener('mouseleave', function() {
-                this.classList.remove('transform', 'scale-105');
+            senaSection.addEventListener('mouseleave', function() {
+                this.classList.remove('transform', 'scale-[1.01]');
             });
         }
     </script>
 </body>
-</html>
